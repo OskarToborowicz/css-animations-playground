@@ -7,9 +7,10 @@
   font-family: Helvetica;
   font-size: 32px;
   user-select: none;
-  transition-property: background-color, border-radius;
+  /* transition-property: background-color, border-radius;
   transition-duration: 750ms;
-  transition-timing-function: ease-out;
+  transition-timing-function: ease-out; */
+  transition: all 750ms ease-out;
 }
 
 #button:hover {
