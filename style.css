@@ -19,7 +19,10 @@
 #button:active {
   border-radius: 50%;
 }
-
+.word {
+  margin: 150px 150px;
+  font-size: 2em;
+}
 .definable .definition-container {
   position: fixed;
   z-index: 10;
@@ -33,10 +36,28 @@
   opacity: 0;
   font-family: "Proza Libre", sans-serif;
   font-size: 1.5rem;
-  transition: top 300ms linear, opacity 300ms linear;
+  transition: top 1300ms linear, opacity 300ms linear;
 }
 
 .definable:hover .definition-container {
   top: 0;
   opacity: 1;
+}
+.animated-word-one {
+  font-size: 2em;
+  margin: 150px;
+  transition: color 250ms ease-in-out;
+}
+.animated-word-one:hover {
+  color: blue;
+  animation: rightLeft 1s;
+}
+@keyframes rightLeft {
+  /* Add stages below */
+  30% {
+    transform: translateX(50px);
+  }
+  70% {
+    transform: translateX(-50px);
+  }
 }
