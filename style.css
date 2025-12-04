@@ -50,7 +50,7 @@
 }
 .animated-word-one:hover {
   color: blue;
-  animation: rightLeft 1s;
+  animation: rightLeft 1s linear infinite;
 }
 @keyframes rightLeft {
   /* Add stages below */
@@ -59,5 +59,27 @@
   }
   70% {
     transform: translateX(-50px);
+  }
+}
+
+.circle {
+  display: block;
+  float: right;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.circle:hover {
+  animation: upDown 4s linear infinite;
+}
+
+@keyframes upDown {
+  30% {
+    transform: translateY(-100px);
+  }
+  70% {
+    transform: translateY(100px);
   }
 }
